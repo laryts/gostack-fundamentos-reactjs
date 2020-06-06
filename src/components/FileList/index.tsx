@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import api from '../../services/api';
 import { Container, FileInfo } from './styles';
 
 interface FileProps {
@@ -14,7 +14,7 @@ interface FileListProps {
 const FileList: React.FC<FileListProps> = ({ files }: FileListProps) => {
   return (
     <Container>
-      {files.map((uploadedFile) => (
+      {files.map(uploadedFile => (
         <li key={uploadedFile.name}>
           <FileInfo>
             <div>
